@@ -1,24 +1,21 @@
-Life OS Phase 3.1 — Buttons Fixed
+Life OS Phase 3.2 — Mobile Width Fixed
 
-Issue fixed:
-- Previous Phase 3 had a JavaScript syntax error in generated click handlers.
-- That stopped all buttons/tabs from responding.
-- This version fixes the error and updates the service worker cache version.
+Fix:
+- Prevents mobile horizontal overflow/clipping.
+- Makes tabs and category chips scroll safely inside the screen.
+- Reduces mobile padding and forces panels/forms/buttons to fit 100% of the iPhone width.
+- Updates the service worker cache version.
 
 GitHub Pages update:
 1. Extract this ZIP.
-2. Upload/replace these files in your GitHub Pages repo:
+2. Upload/replace:
    index.html
    manifest.json
    sw.js
    icon.svg
    README.txt
 3. Commit changes.
-4. Open your website with ?v=31 at the end, for example:
-   https://yourusername.github.io/life-os-tracker/?v=31
+4. Open the site using ?v=32 at the end:
+   https://yourusername.github.io/life-os-tracker/?v=32
 
-If iPhone still shows old version:
-- Safari > reload the page
-- or remove the Home Screen icon and add it again
-- or Settings > Safari > Clear History and Website Data only if needed
-
+If the old version still appears, remove the Home Screen icon and add it again after opening ?v=32 in Safari.
